@@ -14,6 +14,7 @@ exports.handler = async (event, context, callback) => {
     },
     body: html,
   };
+  console.log(' HTML : ', html);
   await browser.close();
   return callback(null, response);
 };
